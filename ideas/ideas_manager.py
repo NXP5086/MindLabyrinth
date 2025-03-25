@@ -1,5 +1,11 @@
+import sys
 import json
 import os
+
+# Append the project root to the sys.path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(project_root)
+
 from utils.embeddings import get_embedding
 from vector_memory.vector_store import VectorStore
 
